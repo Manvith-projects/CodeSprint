@@ -7,18 +7,21 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="assets/logo.jpg" alt="logo">
-        </div>
-        <div class="nav-links">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CHALLENGE</a>
-            <a href="#">CONTACT</a>
-            <a class="btn" href="#">JOIN</a>
-        </div>
-    </nav>
+  <nav>
+    <div class="logo">
+      <img src="assets/logo.jpg" alt="logo">
+    </div>
+    <button class="menu-button" onclick="toggleMenu()">
+      <img src="assets/icons8-menu (1).svg" width="30" height="30" alt="Menu">
+    </button>
+    <div class="nav-links">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">CHALLENGE</a>
+      <a href="#">CONTACT</a>
+      <a class="btn" href="#">JOIN</a>
+    </div>
+  </nav>
 
     <section class="hero">
 
@@ -32,7 +35,7 @@
 <!------------------------------------------------------------------------->
     <section class="discover">
     <h1>DISCOVER YOUR CODING POTENTIAL</h1><br>
-    <P class="p1">EXPLORE THE CUTTING EDGE CODING CHALLENGES INSPIRED BY TOP COMPANIES</P>
+    <center><P class="p1">EXPLORE THE CUTTING EDGE CODING CHALLENGES INSPIRED BY TOP COMPANIES</P></center>
     <div class="container">
         <div class="card">
           <img src="assets/challenge-environment-flag-svgrepo-com.svg" width="200px" height="200px" alt="">
@@ -58,13 +61,13 @@
 
 <section class="third" style="background-color: #fff; display: flex; align-items: center; ">
     <div class="pic3">
-        <img src="assets/pic33.webp" height="600px">
+        <img class="pic333" src="assets/pic33.webp" height="600px">
     </div>
     <div class="third-txt">
-        <h3 style="color: black; opacity: 0.5;">ELEVATE YOUR CODING SKILLS</h3><BR>
-        <h1 style="color: black; font-size: 48PX;">OUTSHINE THE <BR>COMPETITION</h1>
+        <h3 class="ele"style="color: black; opacity: 0.5;">ELEVATE YOUR CODING SKILLS</h3><BR>
+        <h1 class="fo-u"style="color: black; font-size: 48PX;">OUTSHINE THE <BR>COMPETITION</h1>
         
-            <BR>   <p style="color: black; opacity: 0.9;">Immerse Yourself in a World of Coding Excellence: Code Sprint 
+            <BR>   <p class="imm" style="color: black; opacity: 0.9;">Immerse Yourself in a World of Coding Excellence: Code Sprint 
                                 <BR>Offers Captivating Challenges, Rewarding Experiences, and a 
                                 <BR>Thrilling Leaderboard to Showcase Your Coding Mastery</p>
       <BR>  <a class="btn-B" href="#">COMPETE NOW</a>
@@ -74,13 +77,13 @@
 
 <SECTION CLASS="unlock">
     <DIV>
-    <h1 style="font-size: 48px;">UNLOCK YOUR CODING <br>POTENTIAL WITH</h1><BR>
+    <h1 class="fo-u"style="font-size: 48px;">UNLOCK YOUR CODING <br>POTENTIAL WITH</h1><BR>
     <P>CHALLENGES INSPIRED BY TOP TECH <br> COMPANIES AND WIN EXCITING CASH PRIZE</P>
     <a href="#" class="btn-u" >REGISTER NOW</a>
 </DIV>
     
         <div class="unlock-code">
-          <img src="assets/CODE.jpg" width="600px" height="400px" alt="">
+          <img class="pic333" src="assets/CODE.jpg" width="600px" height="400px" alt="">
         </div>
 </SECTION>
 
@@ -135,6 +138,11 @@
       </div>
     </div>
   </section>
-  
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
